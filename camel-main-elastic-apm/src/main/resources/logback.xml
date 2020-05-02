@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+  </root>
+
+  <logger name="org.apache.camel.Tracing" level="WARN" />
+  <logger name="org.apache.camel.impl.engine.AbstractCamelContext" level="INFO" />
+  <logger name="org.apache.camel.impl.engine.DefaultManagementStrategy" level="WARN" />
+  <logger name="org.apache.camel.main.DefaultRoutesCollector" level="WARN" />
+  <logger name="org.apache.camel.main.BaseMainSupport" level="INFO" />
+  <logger name="org.apache.camel.component.quartz.QuartzComponent" level="WARN" />
+  <logger name="org.quartz.core.QuartzScheduler" level="WARN" />
+  <logger name="org.quartz.impl.StdSchedulerFactory" level="WARN" />
+  <logger name="org.apache.camel.processor.aggregate.AggregateProcessor" level="WARN" />
+
+</configuration>

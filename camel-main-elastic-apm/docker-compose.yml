@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  camel:
+    build:
+      context: ./
+    # # If you are not using elasticapm.properties, you can
+    # # Add the configuration using environmant variables
+    # environment:
+    #   - ELASTIC_APM_SERVICE_NAME=camel-springboot-elastic-apm
+    #   - ELASTIC_APM_APPLICATION_PACKAGES=org.example
+    #   - ELASTIC_APM_SERVER_URLS=http://elastic-apm-server:8200
